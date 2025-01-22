@@ -1,0 +1,8 @@
+@component('components/layout', { title: title })
+  <h3>
+    {{ title }}
+  </h3>
+  <form action="{{ route('teacher.create') }}" method="post">
+    @include('partials/createOrUpdateForm')
+  </form>
+@endcomponent
